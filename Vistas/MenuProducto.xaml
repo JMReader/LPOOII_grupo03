@@ -1,0 +1,38 @@
+﻿<Window x:Class="Vistas.MenuProducto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MenuProducto" Height="354" Width="646" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="#FF04527C" Loaded="Grid_Loaded">
+        <Button Content="Nuevo" Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="btnNuevo" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF3FA6D6" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" Click="btnNuevo_Click" />
+        <Button Content="Modificar" Height="23" HorizontalAlignment="Left" Margin="93,12,0,0" Name="btnModificar" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF3FA6D6" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Eliminar" Height="23" HorizontalAlignment="Left" Margin="174,12,0,0" Name="btnEliminar" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF5C2323" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" />
+        <Button Content="Guardar" Height="23" HorizontalAlignment="Left" Margin="456,12,0,0" Name="btnGuardar" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#109901" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" Click="btnGuardar_Click" />
+        <Button Content="Cancelar" Height="23" HorizontalAlignment="Left" Margin="537,12,0,0" Name="btnCancelar" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF3FA6D6" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click" />
+
+        <Label Content="Codigo :" Height="28" HorizontalAlignment="Left" Margin="106,73,0,0" Name="label1" VerticalAlignment="Top" FontSize="14" FontFamily="Montserrat" Foreground="White" />
+        <Label Content="Categoria :" FontFamily="Montserrat" FontSize="14" Height="28" HorizontalAlignment="Left" Margin="91,109,0,0" Name="label2" VerticalAlignment="Top" Foreground="White" />
+        <Label Content="Color :" FontFamily="Montserrat" FontSize="14" Height="28" HorizontalAlignment="Left" Margin="118,145,0,0" Name="label3" VerticalAlignment="Top" Foreground="White" />
+        <Label Content="Descripcion :" FontFamily="Montserrat" FontSize="14" Height="28" HorizontalAlignment="Left" Margin="79,181,0,0" Name="label4" VerticalAlignment="Top" Foreground="White" />
+        <Label Content="Precio :" Height="28" HorizontalAlignment="Left" Margin="113,218,0,0" Name="label5" VerticalAlignment="Top" FontSize="14" FontFamily="Montserrat" Foreground="White" />
+        <TextBox Background="White" BorderBrush="#FF3FA6D6" BorderThickness="0,0,0,2" Height="23" HorizontalAlignment="Left" Margin="184,76,0,0" Name="txtCodigo" VerticalAlignment="Top" Width="339" />
+        <TextBox Background="White" BorderBrush="#FF3FA6D6" BorderThickness="0,0,0,2" Height="23" HorizontalAlignment="Left" Margin="184,112,0,0" Name="txtCategoria" VerticalAlignment="Top" Width="339" />
+        <TextBox Background="White" BorderBrush="#FF3FA6D6" BorderThickness="0,0,0,2" Height="23" HorizontalAlignment="Left" Margin="184,148,0,0" Name="txtColor" VerticalAlignment="Top" Width="339" />
+        <TextBox Background="White" BorderBrush="#FF3FA6D6" BorderThickness="0,0,0,2" Height="23" HorizontalAlignment="Left" Margin="184,185,0,0" Name="txtDescripcion" VerticalAlignment="Top" Width="339" />
+        <TextBox Background="White" BorderBrush="#FF3FA6D6" BorderThickness="0,0,0,2" Height="23" HorizontalAlignment="Left" Margin="184,220,0,0" Name="txtPrecio" VerticalAlignment="Top" Width="339" />
+
+        <Button Name="btnPrimero" Width="50" Height="30" Margin="12,272,562,12" Background="#FF3FA6D6" BorderBrush="White">
+            <Image Source="/Vistas;component/Images/pri.png"></Image>
+        </Button>
+        <Button Name="btnAnterior" Width="50" Height="30" Margin="68,272,506,12" Background="#FF3FA6D6" BorderBrush="White">
+            <Image Source="/Vistas;component/Images/ant1.png" Width="30" Height="15"></Image>
+        </Button>
+        <Button Name="btnSiguiente" Width="50" Height="30" Margin="126,272,448,13" Background="#FF3FA6D6" BorderBrush="White">
+            <Image Source="/Vistas;component/Images/sig1.png" Width="30" Height="15"></Image>
+        </Button>
+        <Button Name="btnUltimo" Width="50" Height="30" Margin="184,272,390,13" Background="#FF3FA6D6" BorderBrush="White">
+            <Image Source="/Vistas;component/Images/ult.png"></Image>
+        </Button>
+
+        <Button Content="Salir" Height="23" HorizontalAlignment="Left" Margin="537,280,0,0" Name="btnSalir" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF3FA6D6" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" Click="btnSalir_Click" />
+    </Grid>
+</Window>

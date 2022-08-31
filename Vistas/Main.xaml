@@ -30,7 +30,6 @@
             <MenuItem Name="Vendedores" Header="Vendedores" MinWidth="140">
                 <MenuItem Name="ABMVendedores" Header="ABM Ventas" Background="#FF070707"></MenuItem>
             </MenuItem>
-
         </Menu>
     </Grid>
 </Window>
