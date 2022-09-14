@@ -3,11 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MenuProducto" Height="354" Width="646" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid Background="#FF04527C" Loaded="Grid_Loaded">
-        <Button Content="Nuevo" Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="btnNuevo" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF3FA6D6" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" Click="btnNuevo_Click" />
-        <Button Content="Modificar" Height="23" HorizontalAlignment="Left" Margin="93,12,0,0" Name="btnModificar" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF3FA6D6" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Eliminar" Height="23" HorizontalAlignment="Left" Margin="174,12,0,0" Name="btnEliminar" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF5C2323" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" />
-        <Button Content="Guardar" Height="23" HorizontalAlignment="Left" Margin="456,12,0,0" Name="btnGuardar" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#109901" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" Click="btnGuardar_Click" />
-        <Button Content="Cancelar" Height="23" HorizontalAlignment="Left" Margin="537,12,0,0" Name="btnCancelar" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF3FA6D6" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click" />
+
+        <Button Content="Nuevo" Style="{StaticResource TriggerPlantilla}" Template="{StaticResource BotonPlantilla}" HorizontalAlignment="Left" Margin="12,12,0,0" Name="btnNuevo" VerticalAlignment="Top" Click="btnNuevo_Click" />
+        <Button Content="Modificar" Style="{StaticResource TriggerPlantilla}" Template="{StaticResource BotonPlantilla}" HorizontalAlignment="Left" Margin="93,12,0,0" Name="btnModificar" VerticalAlignment="Top" />
+        <Button Content="Eliminar" Style="{StaticResource TriggerPlantilla}" Template="{StaticResource BotonEliminar}" HorizontalAlignment="Left" Margin="174,12,0,0" Name="btnEliminar" VerticalAlignment="Top" Width="75" />
+        <Button Content="Guardar" Style="{StaticResource TriggerPlantilla}" Template="{StaticResource BtnGuardar}" HorizontalAlignment="Left" Margin="456,12,0,0" Name="btnGuardar" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#109901" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" Click="btnGuardar_Click" />
+        <Button Content="Cancelar" Style="{StaticResource TriggerPlantilla}" Template="{StaticResource BotonPlantilla}" HorizontalAlignment="Left" Margin="537,12,0,0" Name="btnCancelar" VerticalAlignment="Top" Click="btnCancelar_Click" />
+
 
         <Label Content="Codigo :" Height="28" HorizontalAlignment="Left" Margin="106,73,0,0" Name="label1" VerticalAlignment="Top" FontSize="14" FontFamily="Montserrat" Foreground="White" />
         <Label Content="Categoria :" FontFamily="Montserrat" FontSize="14" Height="28" HorizontalAlignment="Left" Margin="91,109,0,0" Name="label2" VerticalAlignment="Top" Foreground="White" />
@@ -33,6 +35,8 @@
             <Image Source="/Vistas;component/Images/ult.png"></Image>
         </Button>
 
-        <Button Content="Salir" Height="23" HorizontalAlignment="Left" Margin="537,280,0,0" Name="btnSalir" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF3FA6D6" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" Click="btnSalir_Click" />
+
+        <Button Content="Salir" Style="{StaticResource TriggerPlantilla}" Template="{StaticResource BotonPlantilla}" HorizontalAlignment="Left" Margin="537,280,0,0" Name="btnSalir" VerticalAlignment="Top" Click="btnSalir_Click" />
+
     </Grid>
 </Window>

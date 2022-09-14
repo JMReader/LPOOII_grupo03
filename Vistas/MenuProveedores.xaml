@@ -3,34 +3,38 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MenuProveedores" Height="354" Width="646" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid Background="#FF04527C" Loaded="Grid_Loaded">
-        <Button Content="Nuevo" Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="btnNuevo" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF3FA6D6" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" Click="btnNuevo_Click" />
-        <Button Content="Modificar" Height="23" HorizontalAlignment="Left" Margin="93,12,0,0" Name="btnModificar" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF3FA6D6" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Eliminar" Height="23" HorizontalAlignment="Left" Margin="174,12,0,0" Name="btnEliminar" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF5C2323" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" />
-        <Button Content="Guardar" Height="23" HorizontalAlignment="Left" Margin="456,12,0,0" Name="btnGuardar" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#109901" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" Click="btnGuardar_Click" />
-        <Button Content="Cancelar" Height="23" HorizontalAlignment="Left" Margin="537,12,0,0" Name="btnCancelar" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF3FA6D6" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click" />
+
+        <Button Content="Nuevo" Style="{StaticResource TriggerBotonPunto3}" Margin="12,12,0,0" Name="btnNuevo" Click="btnNuevo_Click" />
+        <Button Content="Modificar" Style="{StaticResource TriggerBotonPunto3}" Margin="98,12,0,0" Name="btnModificar" />
+        <Button Content="Eliminar" Style="{StaticResource BtnEliminar}" Margin="182,12,0,0" Name="btnEliminar" Width="75" />
+        <Button Content="Guardar" Style="{StaticResource BGuardar}" Margin="0,12,102,0" Name="btnGuardar" Click="btnGuardar_Click" Width="75" HorizontalAlignment="Right" />
+        <Button Content="Cancelar" Style="{StaticResource TriggerBotonPunto3}" Margin="535,12,0,0" Name="btnCancelar" Click="btnCancelar_Click" />
+
 
         <Label Content="CUIT :" Height="28" HorizontalAlignment="Left" Margin="130,81,0,0" Name="label1" VerticalAlignment="Top" FontSize="14" FontFamily="Montserrat" Foreground="White" />
         <Label Content="RazonSocial :" FontFamily="Montserrat" FontSize="14" Height="28" HorizontalAlignment="Left" Margin="84,124,0,0" Name="label2" VerticalAlignment="Top" Foreground="White" />
         <Label Content="Direccion :" FontFamily="Montserrat" FontSize="14" Height="28" HorizontalAlignment="Left" Margin="99,166,0,0" Name="label3" VerticalAlignment="Top" Foreground="White" />
         <Label Content="Telefono :" FontFamily="Montserrat" FontSize="14" Height="28" HorizontalAlignment="Left" Margin="102,209,0,0" Name="label4" VerticalAlignment="Top" Foreground="White" />
-        <TextBox Background="White" BorderBrush="#FF3FA6D6" BorderThickness="0,0,0,2" Height="23" HorizontalAlignment="Left" Margin="184,83,0,0" Name="txtCuit" VerticalAlignment="Top" Width="339" />
-        <TextBox Background="White" BorderBrush="#FF3FA6D6" BorderThickness="0,0,0,2" Height="23" HorizontalAlignment="Left" Margin="184,125,0,0" Name="txtRazonSocial" VerticalAlignment="Top" Width="339" />
-        <TextBox Background="White" BorderBrush="#FF3FA6D6" BorderThickness="0,0,0,2" Height="23" HorizontalAlignment="Left" Margin="184,168,0,0" Name="txtDireccion" VerticalAlignment="Top" Width="339" />
-        <TextBox Background="White" BorderBrush="#FF3FA6D6" BorderThickness="0,0,0,2" Height="23" HorizontalAlignment="Left" Margin="184,210,0,0" Name="txtTelefono" VerticalAlignment="Top" Width="339" />
 
-        <Button Name="btnPrimero" Width="50" Height="30" Margin="12,272,562,12" Background="#FF3FA6D6" BorderBrush="White">
+        <TextBox Style="{StaticResource Texto}" Margin="184,83,0,0" Name="txtCuit" />
+        <TextBox Style="{StaticResource Texto}" Margin="184,125,0,0" Name="txtRazonSocial" />
+        <TextBox Style="{StaticResource Texto}" Margin="184,168,0,0" Name="txtDireccion" />
+        <TextBox Style="{StaticResource Texto}" Margin="184,210,0,0" Name="txtTelefono" />
+
+        <Button Name="btnPrimero" Style="{StaticResource BotonNavegar}" Margin="12,272,562,12">
             <Image Source="/Vistas;component/Images/pri.png"></Image>
         </Button>
-        <Button Name="btnAnterior" Width="50" Height="30" Margin="68,272,506,12" Background="#FF3FA6D6" BorderBrush="White">
+        <Button Name="btnAnterior" Style="{StaticResource BotonNavegar}" Margin="68,272,506,12" >
             <Image Source="/Vistas;component/Images/ant1.png" Width="30" Height="15"></Image>
         </Button>
-        <Button Name="btnSiguiente" Width="50" Height="30" Margin="126,272,448,13" Background="#FF3FA6D6" BorderBrush="White">
+        <Button Name="btnSiguiente" Style="{StaticResource BotonNavegar}" Margin="126,272,448,13" >
             <Image Source="/Vistas;component/Images/sig1.png" Width="30" Height="15"></Image>
         </Button>
-        <Button Name="btnUltimo" Width="50" Height="30" Margin="184,272,390,13" Background="#FF3FA6D6" BorderBrush="White">
+        <Button Name="btnUltimo" Style="{StaticResource BotonNavegar}" Margin="184,272,390,13" >
             <Image Source="/Vistas;component/Images/ult.png"></Image>
         </Button>
 
-        <Button Content="Salir" Height="23" HorizontalAlignment="Left" Margin="537,280,0,0" Name="btnSalir" FontFamily="Montserrat" FontSize="14" Foreground="White" AllowDrop="False" Background="#FF3FA6D6" BorderBrush="White" BorderThickness="1,1,0,1" ClipToBounds="False" VerticalAlignment="Top" Width="75" Click="btnSalir_Click" />
+        <Button Content="Salir" Style="{StaticResource TriggerBotonPunto3}" Margin="537,280,0,0" Name="btnSalir" Click="btnSalir_Click" />
+
     </Grid>
 </Window>

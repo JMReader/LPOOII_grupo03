@@ -4,5 +4,13 @@
              StartupUri="Login.xaml">
     <Application.Resources>
 
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="RDEstilos.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="RDPlantillas.xaml" ></ResourceDictionary>
+                <ResourceDictionary Source="RDTrigger.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
     </Application.Resources>
 </Application>
