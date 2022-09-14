@@ -3,15 +3,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MenuVendedores" Height="354" Width="646" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid Background="#FF04527C" Loaded="Grid_Loaded">
+
         <Button Content="Nuevo" Style="{StaticResource TriggerBotonPunto3}" Margin="12,12,0,0" Name="btnNuevo" Click="btnNuevo_Click" />
         <Button Content="Modificar" Style="{StaticResource TriggerBotonPunto3}" Margin="98,12,0,0" Name="btnModificar" />
         <Button Content="Eliminar" Style="{StaticResource BtnEliminar}" Margin="182,12,0,0" Name="btnEliminar" Width="75" />
         <Button Content="Guardar" Style="{StaticResource BGuardar}" Margin="447,12,0,0" Name="btnGuardar" Click="btnGuardar_Click" Width="75" />
         <Button Content="Cancelar" Style="{StaticResource TriggerBotonPunto3}" Margin="535,12,0,0" Name="btnCancelar" Click="btnCancelar_Click" />
 
+
         <Label Content="Legajo :" Height="28" HorizontalAlignment="Left" Margin="110,92,0,0" Name="label1" VerticalAlignment="Top" FontSize="14" FontFamily="Montserrat" Foreground="White" />
         <Label Content="Nombre :" FontFamily="Montserrat" FontSize="14" Height="28" HorizontalAlignment="Left" Margin="100,135,0,0" Name="label2" VerticalAlignment="Top" Foreground="White" />
         <Label Content="Apellido :" FontFamily="Montserrat" FontSize="14" Height="28" HorizontalAlignment="Left" Margin="100,177,0,0" Name="label3" VerticalAlignment="Top" Foreground="White" />
+
         <TextBox Style="{StaticResource Texto}" Margin="184,95,0,0" Name="txtLegajo"/>
         <TextBox Style="{StaticResource Texto}" Margin="184,137,0,0" Name="txtNombre" />
         <TextBox Style="{StaticResource Texto}" Margin="184,180,0,0" Name="txtApellido" />
@@ -30,5 +33,6 @@
         </Button>
 
         <Button Content="Salir" Style="{StaticResource TriggerBotonPunto3}" Margin="537,280,0,0" Name="btnSalir" Click="btnSalir_Click" />
+
     </Grid>
 </Window>
